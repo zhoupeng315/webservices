@@ -1,0 +1,14 @@
+package org.zttc.service;
+
+import javax.jws.WebResult;
+import javax.jws.WebService;
+
+@WebService
+public interface IMyService {
+	
+	@WebResult(name = "addResult")
+	public int add(int a, int b);
+	
+	public int minus(int a, int b);
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;services_start_client&apos; to &apos;02_services_start_client&apos;&#x0D;&#x0A;- Original element: &apos;services_start_client&apos;&#x0D;&#x0A;- Renamed element: &apos;services_start_client&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;services_start_client&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=services_start_client" name="02_services_start_client" references="true" stamp="1434718825525" version="1.0"/>
+</session>

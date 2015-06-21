@@ -1,0 +1,13 @@
+package org.zttc.service;
+
+import java.net.URL;
+
+import javax.xml.namespace.QName;
+
+public class TestClient {
+
+	public static void main(String[] args) {
+		URL url = new URL("http://localhost:8888/ns?wsdl");
+		QName sname = new QName("","");
+	}
+}

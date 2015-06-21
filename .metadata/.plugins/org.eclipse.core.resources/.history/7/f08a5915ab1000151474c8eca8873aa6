@@ -1,0 +1,9 @@
+package org.zttc.service;
+
+public class TestClient2 {
+
+	public static void main(String[] args) {
+		MyServiceImplService msis = new MyServiceImplService();
+		
+	}
+}

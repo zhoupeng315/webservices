@@ -1,0 +1,10 @@
+package org.zttc.service;
+
+import java.net.URL;
+
+public class TestClient {
+
+	public static void main(String[] args) {
+		URL url = new URL("http://localhost:8888/ns?wsdl");
+	}
+}

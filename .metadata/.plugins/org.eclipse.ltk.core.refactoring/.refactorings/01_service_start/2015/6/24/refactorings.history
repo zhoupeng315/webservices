@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestClient.java&apos; to &apos;services_start_client/src/org.zttc.service&apos;&#x0D;&#x0A;- Original project: &apos;service_start&apos;&#x0D;&#x0A;- Destination element: &apos;services_start_client/src/org.zttc.service&apos;&#x0D;&#x0A;- Original element: &apos;org.zttc.service.TestClient.java&apos;" description="Copy compilation unit" destination="=services_start_client/src&lt;org.zttc.service" element1="/src&lt;org.zttc.service{TestClient.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1434076096836" units="1" version="1.0"/>
+</session>

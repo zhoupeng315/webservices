@@ -1,0 +1,22 @@
+package org.zttc.service;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.Provider.Service;
+
+import javax.xml.namespace.QName;
+
+public class TestClient {
+
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("http://localhost:8888/ns?wsdl");
+			QName sname = new QName("http://service.zttc.org/","MyServiceImplService");
+			Service service = Service.create(url,sname);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
