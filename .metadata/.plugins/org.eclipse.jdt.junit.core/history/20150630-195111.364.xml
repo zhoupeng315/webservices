@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestJaxb" project="04_java_xml" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.itat.xml.TestJaxb" time="0.075">
+    <testcase name="test01" classname="org.itat.xml.TestJaxb" time="0.042"/>
+    <testcase name="test02" classname="org.itat.xml.TestJaxb" time="0.032"/>
+  </testsuite>
+</testrun>

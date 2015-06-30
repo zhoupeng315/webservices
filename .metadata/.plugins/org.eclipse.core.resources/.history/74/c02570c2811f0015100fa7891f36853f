@@ -1,0 +1,13 @@
+package org.itat.xml;
+
+import javax.xml.bind.JAXBContext;
+
+import org.junit.Test;
+
+public class TestJaxb {
+    
+    @Test
+    public void test01(){
+	JAXBContext ctx = JAXBContext.newInstance(Student.class)
+    }
+}

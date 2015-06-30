@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://www.example.org/01" uri="platform:/resource/03_schema/src/schema/01.xsd"/>
+  <uri name="http://www.example.org/02" uri="platform:/resource/03_schema/bin/schema/02.xsd"/>
+</catalog>

@@ -1,0 +1,22 @@
+package org.itat.xml;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+import org.junit.Test;
+import org.omg.CORBA.MARSHAL;
+
+public class TestJaxb {
+    
+    @Test
+    public void test01(){
+	try {
+	    JAXBContext ctx = JAXBContext.newInstance(Student.class);
+	    Marshaller marshaller = ctx.createMarshaller();
+	} catch (JAXBException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
+    }
+}

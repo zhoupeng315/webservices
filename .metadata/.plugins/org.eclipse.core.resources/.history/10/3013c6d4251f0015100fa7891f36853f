@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xmlns:book="http://www.example.org/02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="02.xsd">
+	<id>1</id>
+	<username>zhang3</username>
+	<born>1989-03-15</born>
+
+</books>

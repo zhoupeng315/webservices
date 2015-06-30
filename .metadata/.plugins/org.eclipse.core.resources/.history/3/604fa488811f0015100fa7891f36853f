@@ -1,0 +1,9 @@
+package org.itat.xml;
+
+public class Student {
+
+    private int id;
+    private int name;
+    private int age;
+    private Classroom classroom;
+}

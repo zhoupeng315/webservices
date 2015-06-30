@@ -1,0 +1,8 @@
+package org.itat.xml;
+
+public class Classroom {
+
+    private int id;
+    private String name;
+    
+}

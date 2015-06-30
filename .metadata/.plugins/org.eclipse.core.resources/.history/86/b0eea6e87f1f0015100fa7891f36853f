@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/03"
+	xmlns:tns="http://www.example.org/03" elementFormDefault="qualified">
+
+	<element name="book" type="tns:bookType"></element>
+	<element name="id" type="int"></element>
+	<element name="title" type="string"></element>
+	<element name="content" type="string"></element>
+	
+	<complexType name="bookType">
+		<sequence>
+			<element ref="tns:id"></element>
+		</sequence>
+	</complexType>
+</schema>
