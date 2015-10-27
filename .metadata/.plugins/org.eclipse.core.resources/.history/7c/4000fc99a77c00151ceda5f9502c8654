@@ -1,0 +1,110 @@
+package org.itat.stax;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.xml.namespace.QName;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamConstants;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.XMLStreamReader;
+
+import org.junit.Test;
+
+public class TestStax {
+
+    @Test
+    public void test01() {
+	XMLInputFactory factory = XMLInputFactory.newInstance();
+	InputStream is = null;
+
+	try {
+	    is = TestStax.class.getClassLoader()
+		    .getResourceAsStream("books.xml");
+	    XMLStreamReader reader = factory.createXMLStreamReader(is);
+	    while (reader.hasNext()) {
+		System.out.println(reader.next());
+		int type = reader.next();
+		if (type == XMLStreamConstants.START_DOCUMENT) {
+		    System.out.println(reader.getName());
+		} else if (type == XMLStreamConstants.CHARACTERS) {
+		    System.out.println(reader.getText().trim());
+		} else if (type == XMLStreamConstants.END_ELEMENT) {
+		    System.out.println("/" + reader.getName());
+		}
+	    }
+	} catch (XMLStreamException e) {
+	    e.printStackTrace();
+	} finally {
+	    try {
+		if (is != null)
+		    is.close();
+	    } catch (IOException e) {
+		e.printStackTrace();
+	    }
+	}
+
+    }
+
+    @Test
+    public void test02() {
+	XMLInputFactory factory = XMLInputFactory.newInstance();
+	InputStream is = null;
+
+	try {
+	    is = TestStax.class.getClassLoader()
+		    .getResourceAsStream("books.xml");
+	    XMLStreamReader reader = factory.createXMLStreamReader(is);
+	    while (reader.hasNext()) {
+		int type = reader.next();
+		if (type == XMLStreamConstants.START_ELEMENT) {
+		    String name = reader.getName().toString();
+		    if (name.equals("book")) {
+			System.out.println(reader.getAttributeName(0) + ":"
+				+ reader.getAttributeValue(0));
+		    }
+		}
+	    }
+	} catch (XMLStreamException e) {
+	    e.printStackTrace();
+	} finally {
+	    try {
+		if (is != null)
+		    is.close();
+	    } catch (IOException e) {
+		e.printStackTrace();
+	    }
+	}
+    }
+    
+    @Test
+    public void test03() {
+	XMLInputFactory factory = XMLInputFactory.newInstance();
+	InputStream is = null;
+
+	try {
+	    is = TestStax.class.getClassLoader()
+		    .getResourceAsStream("books.xml");
+	    XMLStreamReader reader = factory.createXMLStreamReader(is);
+	    while (reader.hasNext()) {
+		int type = reader.next();
+		if (type == XMLStreamConstants.START_ELEMENT) {
+		    String name = reader.getName().toString();
+		    if (name.equals("title")) {
+			System.out.println(reader.getElementText() + ":"
+				+ reader.getAttributeValue(0));
+		    }
+		}
+	    }
+	} catch (XMLStreamException e) {
+	    e.printStackTrace();
+	} finally {
+	    try {
+		if (is != null)
+		    is.close();
+	    } catch (IOException e) {
+		e.printStackTrace();
+	    }
+	}
+    }
+}

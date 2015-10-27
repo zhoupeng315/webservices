@@ -1,0 +1,19 @@
+package org.itat.stax;
+
+import java.io.InputStream;
+
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamReader;
+
+import org.junit.Test;
+
+public class TestStax {
+
+    @Test
+    public void test01() {
+	XMLInputFactory factory = XMLInputFactory.newInstance();
+	InputStream is = null;
+	
+	XMLStreamReader reader = factory.createXMLStreamReader(stream);
+    }
+}

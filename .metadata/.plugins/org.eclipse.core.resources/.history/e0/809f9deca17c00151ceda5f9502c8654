@@ -1,0 +1,11 @@
+package org.itat.stax;
+
+import org.junit.Test;
+
+public class TestStax {
+
+    @Test
+    public void test01() {
+
+    }
+}

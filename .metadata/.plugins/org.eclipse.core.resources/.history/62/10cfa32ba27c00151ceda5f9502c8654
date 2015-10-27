@@ -1,0 +1,13 @@
+package org.itat.stax;
+
+import javax.xml.stream.XMLInputFactory;
+
+import org.junit.Test;
+
+public class TestStax {
+
+    @Test
+    public void test01() {
+	XMLInputFactory factory = XMLInputFactory.newInstance()
+    }
+}
