@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestStax" project="04_java_xml" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="org.itat.stax.TestStax" time="0.048">
+    <testcase name="test01" classname="org.itat.stax.TestStax" time="0.012"/>
+    <testcase name="test02" classname="org.itat.stax.TestStax" time="0.002"/>
+    <testcase name="test03" classname="org.itat.stax.TestStax" time="0.002"/>
+    <testcase name="test04" classname="org.itat.stax.TestStax" time="0.003"/>
+    <testcase name="test05" classname="org.itat.stax.TestStax" time="0.004"/>
+    <testcase name="test06" classname="org.itat.stax.TestStax" time="0.025"/>
+  </testsuite>
+</testrun>
